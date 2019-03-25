@@ -40,7 +40,7 @@ body {
 
 header {
     padding:10px 0px;
-    transition: all 300ms ease-in;
+    transition: all 1000ms ease-in;
 }
 
 header .header_logo {
@@ -48,10 +48,12 @@ header .header_logo {
 }
 header .header_logo_venue {
     font-size: 40px;
+    color: greenyellow
 }
 
 header .header_logo_title {
     text-transform: uppercase;
+    color: green
 }
 
 /*====================
@@ -78,6 +80,7 @@ footer .footer_copyright {
 .carrousel_wrapper {
     height:700px;
     overflow: hidden;
+    color: orange
 }
 
 .carrousel_image {
@@ -87,21 +90,21 @@ footer .footer_copyright {
 
 .artist_name {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 85%;
+    left: 80%;
     width: 400px;
     height: 160px;
     -webkit-transform: translate(-50%, -50%);  
     transform: translate(-50%, -50%);   
-    border: 2px solid white;
+    border: 2px solid rgb(35, 219, 81);
 }
 
 .artist_name .wrapper {
-    border: 2px solid white;
+    border: 2px solid rgb(35, 219, 81);
     height: 121px;
     margin: 6px;
     text-align: center;
-    color: #fff;
+    color: rgb(35, 219, 81);
     font-size: 40px;
     padding: 21px 70px 0px 70px;
     text-transform: uppercase;
@@ -118,7 +121,7 @@ footer .footer_copyright {
 }
 
 .countdown_wrapper .countdown_top {
-    background: #ff4800;
+    background: transparent;
     font-size: 19px;
     padding: 10px;
     display: inline-block;
@@ -127,7 +130,7 @@ footer .footer_copyright {
 
 .countdown_wrapper .countdown_bottom {
     display: flex;
-    background: #d93d00;
+    background: transparent;
     padding: 10px 20px;
 }
 

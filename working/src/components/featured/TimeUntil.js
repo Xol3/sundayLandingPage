@@ -4,7 +4,7 @@ import Slide from 'react-reveal/Slide';
 class TimeUntil extends Component {
 
     state = {
-        deadline: 'Dec, 16, 2018',
+        deadline: 'Jun, 20, 2017',
         days:'0',
         hours:'0',
         minutes:'0',
@@ -20,7 +20,7 @@ class TimeUntil extends Component {
             const minutes = Math.floor((time/1000/60)%60);
             const hours = Math.floor((time/(1000*60*60))%24);
             const days = Math.floor(time/(1000*60*60*24));
-
+            console.log(seconds)
             this.setState({
                 days,
                 hours,
@@ -38,7 +38,7 @@ class TimeUntil extends Component {
 
     render() {
         return (
-            <Slide left delay={1000}>
+            <Slide left delay={1500}>
                 <div className="countdown_wrapper">
                     <div className="countdown_top">
                         Event starts in
@@ -49,7 +49,7 @@ class TimeUntil extends Component {
                                 {this.state.days}
                             </div>
                             <div className="countdown_tag">
-                                Days
+                                Dias
                         </div>
                         </div>
                         <div className="countdown_item">
@@ -57,7 +57,7 @@ class TimeUntil extends Component {
                                 {this.state.hours}
                             </div>
                             <div className="countdown_tag">
-                                Hs
+                                Horas
                         </div>
                         </div>
                         <div className="countdown_item">
@@ -65,7 +65,7 @@ class TimeUntil extends Component {
                                 {this.state.minutes}
                             </div>
                             <div className="countdown_tag">
-                                Min
+                                Minutos
                         </div>
                         </div>
                         <div className="countdown_item">
@@ -73,7 +73,7 @@ class TimeUntil extends Component {
                                 {this.state.seconds}
                             </div>
                             <div className="countdown_tag">
-                                Sec
+                                Segundos
                         </div>
                         </div>
                     </div>
